@@ -1,0 +1,105 @@
+##2D array
+*a 2D array is  an array that stores elements in rows and columns,like a table or matrix.
+example : 1 2  3
+          4 5 6
+          7 8 9
+*this is a 3 * 3 matrix
+ie * 3 rows & 3 coloumns
+*each value is accessed using two indexes:
+array[row][column]
+1.Declaration :
+int[][] = new int[3][3]
+3 rows
+3 columns
+structure:
+arr[0][0]arr[0][1]arr[0][2]
+arr[1][0]arr[1][1]arr[1][2]
+arr[2][0]arr[2][1]arr[2][2]
+2.intialization :
+in intialization we can assign values directly.
+int[][] arr = {
+      {1,2,3},
+      {4,5,6},
+      {7,8,9}
+    };
+3.taking input:
+we use nested loops
+public class Main {
+public static void main(String[] args){
+   int[][]arr = {
+         {1,2,3},
+      {4,5,6},
+      {7,8,9}
+    };
+   for (int i=0;i<3;i++){
+     for(int j=0;j<3;j++){
+        System.out.print(arr[i][j] + " ");
+     }
+       system.out.println();
+  }
+ }
+}
+4.Printing a 2D array:
+for (int i=0;i<3;i++){
+     for(int j=0;j<3;j++){
+        System.out.print(arr[i][j] + " ");
+     }
+       system.out.println();
+  }
+o/p:
+1 2 3
+4 5 6
+7 8 9
+5. Traversing a 2D array:
+*Traversal means visiting every element of the array.
+*Its time complexity is O(rows * columns)
+structure:
+for rows
+  for columns
+    access element
+6.Acessing elements:
+syntax :
+array[row][columns]
+example :
+    1 2 3
+    4 5 6
+    7 8 9
+array[1][2]] = 6//i & j
+7.types of traversal:
+1.row-wise traversal
+elements are printed row by row
+maatrix: 1 2 3
+         4 5 6
+         7 8 9
+o/p : 1 2 3 4 5 6 7 8 9
+2.column wise traversal :
+elements are printed column by column 
+o/p : 1 4 7 2 5 8 3 6 9
+8.important operations on 2D array:
+1.mattrix addition:
+1 2  5 6
+3 4 + 7 8
+result : 6 8
+        10 12
+2.transpose of a matrix:
+*rows becomes columns
+1 2 3
+4 5 6
+result: 1 4
+        2 5
+        3 6
+3.rotate matrix(90 degrees):
+ex: 1 2 3
+    4 5 6
+    7 8 9 
+90 degrees clockwise rotation:
+7 4 1
+8 5 2
+9 6 3
+4.spiral traverse:
+elements are printed imn a spiral order.
+ex: 1 2 3
+    4 5 6
+    7 8 9
+o/p: 1 2 3 6 9 8 7 4 5
+      
